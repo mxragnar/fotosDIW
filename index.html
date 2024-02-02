@@ -47,15 +47,41 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
             height: 600px;
             width: 600px;
         }
+
+        .contenedor div figure picture video{
+            object-fit: fill;
+            object-position: 5px;
+            width: 600px;
+            background-color: greenyellow;
+
+        }
+
+        .contenedor div figure picture img{
+            object-fit: fill;
+            object-position: 15px;
+            width: 600px;
+            background-color: aqua;
+            
+        }
+
+        .contenedor div figure picture img:hover{
+            border-image: repeating-linear-gradient(20deg, #b88646, #2c327a, #0e1a05 25px) 70;
+            filter: hue-rotate(100deg);
+            opacity: 40%;
+            clip-path: polygon(40% 0, 90% 25%, 30% 80%, 0 30%);
+        }
+
+
     </style>
 </head>
 
 <body>
     <div class="contenedor">
-<div>
+
+        <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="bandera-comunidad-valenciana_1398-2655.webp" alt="foto1">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -65,7 +91,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="bebida-cola-fresca-vidrio_144627-16212.webp" alt="foto2">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -75,7 +101,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="concepto-dinero-fotorrealista_23-2151027566.webp" alt="foto3">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -85,7 +111,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="craneo-vikingo-tibias-cruzadas-vector-diseno_43623-1273.webp" alt="foto4">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -95,7 +121,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="cupe-deportivo-amarillo-carretera-puesta-sol_114579-4064.webp" alt="foto5">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -105,7 +131,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="dinero-euros-monedas-euros-apiladas-encima-otra-diferentes-posiciones-contexto-billetes-euros-concepto-finanzas-empresariales-maqueta-banner-pantalla-bienvenida-noticias-negocios_166373-2825.webp" alt="foto6">
                 </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -116,7 +142,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="futbol-gigante-entorno-urbano_23-2150760354.webp" alt="foto7">
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -126,7 +152,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/mp4">
+                    <source srcset="" type="img/mp4" sizes="90vw">
                     <video src="gato.mp4"></video>
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -136,7 +162,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="ilustracion-cristiano-ronaldo13_1005426-864.webp" alt="foto9">
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -146,7 +172,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/mp4">
+                    <source srcset="" type="img/mp4" sizes="90vw">
                     <video src="price.mp4" alt="foto10"></video>
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -156,7 +182,7 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="simbolo-anarquia-diseno-plano-dibujado-mano_23-2149259700.webp" alt="foto11">
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
@@ -166,13 +192,21 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
         <div>
             <figure>
                 <picture>
-                    <source srcset="" type="img/webp">
+                    <source srcset="" type="img/webp" sizes="90vw">
                     <img src="skjolden-noruega-16-mayo-2023-montana_58702-11010.webp" alt="foto12">
                     </picture>
                 <figcaption>Imagen de prueba</figcaption>
             </figure>
         </div>
-   </div>
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
 
 <h2>Tabla de Imágenes antes de mejorar</h2>
 <table style="width:100%">
@@ -196,11 +230,25 @@ ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  docu
       <th>Tiempo de Carga</th>
     </tr>
     <tr>
-      <td>500KB</td>
+      <td>420KB</td>
       <td>Webp</td>
-      <td></td>
+      <td>10ms</td>
     </tr>
   </table>
+
+  <h2>Tabla de Imágenes despues de mejorar x2</h2>
+  <table style="width:100%">
+      <tr>
+        <th>Tamaño Medio</th>
+        <th>Formato de Imagen</th> 
+        <th>Tiempo de Carga</th>
+      </tr>
+      <tr>
+        <td>420KB</td>
+        <td>Webp</td>
+        <td>90ms</td>
+      </tr>
+    </table>
 
 </body>
 </html>
