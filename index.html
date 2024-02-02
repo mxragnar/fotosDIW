@@ -1,0 +1,92 @@
+<!--
+    05-06 Imágenes
+En esta práctica debes ingresar varias imágenes en una página web y comparar el tiempo de carga hasta minimizarlo por completo.
+Utiliza sitios libres de derechos para descargar 12 imágenes con la resolución más alta posible. Incluye formatos JPG, GIF y PNG. 
+Crear una página web para organizar las imágenes usando el modelo flexbox, de modo que quepan dos imágenes por ancho.Obtendrás 6 filas de dos imágenes por fila. NO CAMBIAR EL TAMAÑO ORIGINAL.
+Agregue etiquetas ALT a todas las imágenes. Respeta el copyleft utilizando las etiquetas apropiadas para dar el crédito necesario al autor de la imagen.
+Crear un proyecto en Github y publicar la página. Siga el siguiente manual:https://docs.github.com/es/pages/getting-started-with-github-pages/creating-a-github-pages-site
+Usar herramientas de Google (https://pagespeed.web.dev/) para comprobar el tiempo de carga de la página, crear una tabla e indicar el tamaño medio, formato de imagen utilizado y tiempo de carga.Agregue la tabla a la página web.
+COPIAR LA PÁGINA WEB EN OTRA.Optimiza el tamaño de las imágenes. Utiliza etiquetas PICTURE, SRCSET y MEDIA para incluir distintos tamaños y formatos de imagen.  Realiza nuevamente la prueba de tiempo de carga y actualiza los datos de la tabla.
+COPIA LA ÚLTIMA PÁGINA WEB EN OTRA.Ahora seguiremos los consejos de la página de Google. en cuanto a formatos.Puedes utilizar la herramienta gráfica que quieras para configurarlos, a modo de ejemplo aquí tienes varias: https://www.dosmedia.com/tratamiento-de-imagenes-para-tu-pagina-web/
+Aplicación de Estilos CSS:
+Usar object-fit y object-position para asegurar que las imágenes se muestren correctamente en su contenedor.
+Implementar srcset y sizes en las imágenes para hacerlas responsivas en diferentes tamaños de pantalla.
+Utilizar la etiqueta <picture> para algunas imágenes, ofreciendo diferentes formatos según el navegador.
+Efectos Visuales Adicionales:
+Aplicar diferentes filters a algunas imágenes para cambiar su apariencia (por ejemplo, sepia, grayscale).
+Utilizar opacity en algunas imágenes para crear un efecto de transparencia.
+Implementar clip-path en al menos una imagen para darle una forma única.
+Añadir border-image a alguna imagen para mostrar cómo se puede usar una imagen como borde.
+Responsividad:
+Asegurarse de que la galería se vea bien en diferentes tamaños de pantalla, incluyendo teléfonos móviles y tablets.
+Interactividad:
+Agregar interactividad con JavaScript, como cambiar la opacidad o el filtro al pasar el mouse sobre las imágenes.
+ENTREGA:  una sóla imagen con  las tres capturas de pantalla  y un  sólo  documento  HTML con el código final.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Espejo Vergara</title>
+    <style>
+        
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        img {
+            flex: 0 0 calc(50% - 10px);
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/bandera-comunidad-valenciana_1398-2655.webp" alt="foto1">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/bebida-cola-fresca-vidrio_144627-16212.webp" alt="foto2">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/concepto-dinero-fotorrealista_23-2151027566.webp" alt="foto3">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/craneo-vikingo-tibias-cruzadas-vector-diseno_43623-1273.webp" alt="foto4">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/cupe-deportivo-amarillo-carretera-puesta-sol_114579-4064.webp" alt="foto5">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/dinero-euros-monedas-euros-apiladas-encima-otra-diferentes-posiciones-contexto-billetes-euros-concepto-finanzas-empresariales-maqueta-banner-pantalla-bienvenida-noticias-negocios_166373-2825.webp" alt="foto6">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/futbol-gigante-entorno-urbano_23-2150760354.webp" alt="foto7">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/gato.gif" alt="foto8">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/ilustracion-cristiano-ronaldo13_1005426-864.webp" alt="foto9">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/price.gif" alt="foto10">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/simbolo-anarquia-diseno-plano-dibujado-mano_23-2149259700.webp" alt="foto11">
+    <img src="https://raw.githubusercontent.com/mxragnar/fotosDIW/main/skjolden-noruega-16-mayo-2023-montana_58702-11010.webp" alt="foto12">
+</div>
+
+<h2>Tabla de Imágenes antes de mejorar</h2>
+<table style="width:100%">
+    <tr>
+      <th>Tamaño Medio</th>
+      <th>Formato de Imagen</th> 
+      <th>Tiempo de Carga</th>
+    </tr>
+    <tr>
+      <td>1,6MB</td>
+      <td>JPEG, GIF, PNG</td>
+      <td>140ms</td>
+    </tr>
+  </table>
+
+  <h2>Tabla de Imágenes despues de mejorar</h2>
+<table style="width:100%">
+    <tr>
+      <th>Tamaño Medio</th>
+      <th>Formato de Imagen</th> 
+      <th>Tiempo de Carga</th>
+    </tr>
+    <tr>
+      <td>500KB</td>
+      <td>Webp</td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
